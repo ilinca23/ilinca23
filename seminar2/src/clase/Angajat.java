@@ -1,0 +1,35 @@
+package clase;
+
+import java.util.Arrays;
+
+public class Angajat extends Aplicant {
+    private String ocupatie;
+    private int salariu;
+
+    public void setOcupatie(String ocupatie) {
+        this.ocupatie = ocupatie;
+    }
+
+    public void setSalariu(int salariu) {
+        this.salariu = salariu;
+    }
+
+    public Angajat(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiecte, int salariu, String ocupatie) {
+
+        this.salariu = salariu;
+        this.ocupatie = ocupatie;
+    }
+
+    public Angajat() {
+        super();
+
+    }
+
+
+    @Override
+    public String toString() {
+        return "Angajat: " + super.toString() + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
+    }
+
+
+}
